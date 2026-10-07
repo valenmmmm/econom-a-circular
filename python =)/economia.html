@@ -1,0 +1,1082 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Revesti </title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: #f5f5f5;
+      color: #333;
+    }
+
+    header {
+      background-color: #a4ddd6;
+      color: white;
+      text-align: center;
+      padding: 30px 20px;
+    }
+
+    header h1 {
+      font-size: 26px;
+      margin-bottom: 8px;
+    }
+
+    header p {
+      font-size: 20px;
+    }
+
+    main {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 30px 20px;
+    }
+
+    .grid-productos {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .producto {
+      background-color: white;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+      display: flex;
+      flex-direction: column;
+      width: 250px;
+    }
+
+    .producto img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+    }
+
+    .producto-info {
+      padding: 15px;
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+    }
+
+    .producto-info h2 {
+      font-size: 1.1rem;
+      margin-bottom: 6px;
+    }
+
+    .producto-info p {
+      font-size: 13px;
+      color: #666;
+      flex-grow: 1;
+      margin-bottom: 10px;
+    }
+
+    .precio {
+      font-size: 15px;
+      font-weight: bold;
+      color: #3ca8c9;
+      margin-bottom: 10px;
+    }
+
+    .talle {
+      font-size: 15px;
+      font-weight: bold;
+      color: #3ca8c9;
+      margin-bottom: 10px;
+    }
+
+    .boton-comprar {
+      background-color: #a7c9ce;
+      color: white;
+      border: none;
+      padding: 10px;
+      border-radius: 6px;
+      font-size: 10px;
+      cursor: pointer;
+    }
+
+    .boton-comprar:hover {
+      background-color: #ffb6c7;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #333;
+      color: white;
+      margin-top: 40px;
+    }
+
+    .whatsapp {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 15px 0;
+      gap: 10px;
+    }
+
+    .whatsapp img {
+      width: 30px;
+    }
+
+    .whatsapp a {
+      text-decoration: none;
+      padding: 5px;
+      background-color: #3cc24e;
+      border-radius: 8px;
+      color: white;
+    }
+
+    .mercadopago {
+      display: flex;
+      gap: 10px;
+      justify-content: center;
+      align-items: center;
+      margin: 15px 0;
+    }
+
+    .mercadopago a {
+      text-decoration: none;
+      padding: 5px;
+      background-color: #2abdff;
+      border-radius: 8px;
+      color: white;
+    }
+
+    .mercadopago img {
+      width: 30px;
+      border-radius: 8px;
+    }
+
+    .instagran {
+      display: flex;
+      gap: 10px;
+      justify-content: center;
+      align-items: center;
+      margin: 15px 0;
+    }
+
+    .instagran img {
+      width: 30px;
+      border-radius: 8px;
+    }
+
+    .instagran a {
+      text-decoration: none;
+      padding: 5px;
+      background-color: #e7a1c4;
+      border-radius: 8px;
+      color: white;
+    }
+    img{
+      width: 150px;
+          
+      }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1> Revestì</h1>
+    <p>Aca vas a encontrar prendas usadas en muy buen estado, seleccionadas con mucho cuidado y listas para tener una nueva oportunidad.</p>
+    <span><img src="REVESTI.JPG" alt=""></span>
+    <div class="whatsapp">
+      <img src="wtsap.jpg" alt="">
+      <a href="https://wa.me/+5493517643042">Mandanos un Whatsapp
+      </a>
+    </div>
+
+    <div class="mercadopago">
+      <img src="mp.jpg" alt="">
+      <a href="">Alias: valen.delgado.21
+      </a>
+    </div>
+    <div class="instagran">
+      <img src="ig.jpg" alt="Instagram">
+      <a href="https://www.instagram.com/revesti.cr?stkn=eXd0YmJkN2p0ZnRt&utm_source=qr" target="_blank" rel="noopener noreferrer" class="ig-link">
+        Seguinos en Instagram
+      </a>
+    </div>
+
+  </header>
+
+  <main>
+    <div class="grid-productos">
+
+      <div class="producto">
+        <img src="1.jpg" alt="CHOMBA TALLERES - Azul Marino">
+        <div class="producto-info">
+          <h2>CHOMBA TALLERES - Azul Marino</h2>
+          <p>Chomba original de Talleres, azul marino. Impecable, sin detalles.</p>
+          <span class="precio">$4000</span>
+          <span class="talle">Talle: M</span>
+          <button class="boton-comprar">Agregar al carrito</button>
+        </div>
+      </div>
+
+      <div class="producto">
+        <img src="2.jpg" alt="REMERA GRIS..I, I, wait.">
+        <div class="producto-info">
+          <h2>REMERA GRIS "I, I, wait.</h2>
+          <p>Remera gris oscura con frase "I, I, wait." en naranja al frente.</p>
+          <span class="precio">$2500</span>
+          <span class="talle">Talle: M</span>
+          <button class="boton-comprar">Agregar al carrito</button>
+        </div>
+      </div>
+
+      <div class="producto">
+        <img src="3.jpg" alt="REMERA CAPTAIN FIN - Verde Agua">
+        <div class="producto-info">
+          <h2>REMERA CAPTAIN FIN - Verde Agua</h2>
+          <p>Remera Captain Fin Co. original, color verde agua!</p>
+          <span class="precio">$4000</span>
+          <span class="talle">Talle: XL</span>
+          <button class="boton-comprar">Agregar al carrito</button>
+        </div>
+      </div>
+
+      <div class="producto">
+        <img src="4.jpg" alt="REMERA CAPTAIN FIN - Negra">
+        <div class="producto-info">
+          <h2>REMERA CAPTAIN FIN - Negra</h2>
+          <p></p>
+          <span class="precio"> $4000</span>
+          <span class="talle">Talle: XL</span>
+          <button class="boton-comprar">Agregar al carrito</button>
+        </div>
+      </div>
+
+      <div class="producto">
+        <img src="5.jpg" alt="CARTERITA CELESTE">
+        <div class="producto-info">
+          <h2>CARTERITA CELESTE</h2>
+          <p>Sin roturas ni manchas. Estado 10/10, casi sin uso.</p>
+          <span class="precio">$4000</span>
+          <button class="boton-comprar">Agregar al carrito</button>
+        </div>
+      </div>
+
+      <div class="producto">
+        <img src="6.jpg" alt="REMERA ESPRESSO - Beige">
+        <div class="producto-info">
+          <h2>REMERA ESPRESSO - Beige</h2>
+          <p>Remera beige estilo oversize, con estampa "ESPRESSO" en marrón.</p>
+          <span class="precio"> $4000</span>
+          <span class="talle">Talle: L</span>
+          <button class="boton-comprar">Agregar al carrito</button>
+        </div>
+      </div>
+
+      <div class="producto">
+        <img src="7.jpg" alt="CROP TOP MANGAS CORTAS ABUCHONADAS - Negro">
+        <div class="producto-info">
+          <h2>CROP TOP MANGAS CORTAS ABUCHONADAS - Negro</h2>
+          <p>0 usos. Impecable, sin detalles.</p>
+          <span class="precio">$2.500</span>
+          <span class="talle">Talle: M</span>
+          <button class="boton-comprar">Agregar al carrito</button>
+        </div>
+      </div>
+
+
+      <div class="producto">
+        <img src="8.jpg" alt="CROP TOP - Gris">
+        <div class="producto-info">
+          <h2>CROP TOP - Gris</h2>
+          <p>Pocos usos. Impecable, sin detalles.</p>
+          <span class="precio"> $3.000</span>
+          <span class="talle">Talle: M</span>
+          <button class="boton-comprar">Agregar al carrito</button>
+        </div>
+      </div>
+
+      <div class="producto">
+        <img src="9.jpg" alt="BUZO CROPPED - Marron">
+        <div class="producto-info">
+          <h2>BUZO CROPPED - Marron</h2>
+          <p>Sin usos. Impecable, sin detalles.</p>
+          <span class="precio">$3.500</span>
+          <span class="talle">Talle: M</span>
+          <button class="boton-comprar">Agregar al carrito</button>
+        </div>
+      </div>
+
+      <div class="producto">
+        <img src="10.jpg" alt="REMERA DEPORTIVA - Salmon">
+        <div class="producto-info">
+          <h2>REMERA DEPORTIVA - Salmon</h2>
+          <p>Sin usos. Impecable, sin detalles.</p>
+          <span class="precio"> $2.500</span>
+          <span class="talle">Talle: M</span>
+          <button class="boton-comprar">Agregar al carrito</button>
+        </div>
+      </div>
+
+      <div class="producto">
+        <img src="11.jpg" alt="VESTIDO DE BRILLOS - Gris">
+        <div class="producto-info">
+          <h2>VESTIDO DE BRILLOS - Gris</h2>
+          <p>Sin usos. Impecable, sin detalles.</p>
+          <span class="precio">$3000</span>
+          <span class="talle">Talle: M</span>
+          <button class="boton-comprar">Agregar al carrito</button>
+        </div>
+      </div>
+
+      <div class="producto">
+        <img src="12.jpg" alt="POLLERA  SATÉN- Negra">
+        <div class="producto-info">
+          <h2>POLLERA  SATÉN- Negra</h2>
+          <p>Sin usos. Impecable, sin detalles.</p>
+          <span class="precio">$3000</span>
+          <span class="talle">Talle: S</span>
+          <button class="boton-comprar">Agregar al carrito</button>
+        </div>
+      </div>
+
+      <div class="producto">
+        <img src="13.jpg" alt="CORSET - Blanca">
+        <div class="producto-info">
+          <h2>CORSET - Blanca</h2>
+          <p>Pocos usos. Impecable, sin detalles.</p>
+          <span class="precio">$4000</span>
+          <span class="talle">Talle: S</span>
+          <button class="boton-comprar">Agregar al carrito</button>
+        </div>
+      </div>
+
+      <div class="producto">
+        <img src="14.jpg" alt="VESTIDO  - Negro">
+        <div class="producto-info">
+          <h2>VESTIDO  - Negro</h2>
+          <p>Pocos usos. Impecable, sin detalles.</p>
+          <span class="precio">$4000</span>
+          <span class="talle">Talle: S</span>
+          <button class="boton-comprar">Agregar al carrito</button>
+        </div>
+      </div>
+
+      <div class="producto">
+        <img src="15.jpg" alt="VESTIDO DE BRILLOS - Gris">
+        <div class="producto-info">
+          <h2>VESTIDO DE BRILLOS - Gris</h2>
+          <p>Pocos usos. Sin detalles.</p>
+          <span class="precio"> $2.500</span>
+          <span class="talle">Talle: S</span>
+          <button class="boton-comprar">Agregar al carrito</button>
+        </div>
+      </div>
+
+      <div class="producto">
+        <img src="16.jpg" alt="BODY  - Blanco">
+        <div class="producto-info">
+          <h2>BODY  - Blanco</h2>
+          <p>Pocos usos.</p>
+          <span class="precio">$3000</span>
+          <span class="talle">Talle: S</span>
+          <button class="boton-comprar">Agregar al carrito</button>
+        </div>
+      </div>
+
+      <div class="producto">
+        <img src="17.jpg" alt="CROP TOP ANIMAL PRINT - Rojo y Negro">
+        <div class="producto-info">
+          <h2>CROP TOP ANIMAL PRINT - Rojo y Negro</h2>
+          <p>Pocos usos. Impecable, sin detalles.</p>
+          <span class="precio">$2.500</span>
+          <span class="talle">Talle: S</span>
+          <button class="boton-comprar">Agregar al carrito</button>
+        </div>
+      </div>
+
+      <div class="producto">
+        <img src="18.jpg" alt="CALZA TERMICA - Negra">
+        <div class="producto-info">
+          <h2>CALZA TERMICA - Negra</h2>
+          <p>Pocos usos. Impecable, sin detalles.</p>
+          <span class="precio">$4000</span>
+          <span class="talle">Talle: S</span>
+          <button class="boton-comprar">Agregar al carrito</button>
+        </div>
+      </div>
+
+      <div class="producto">
+        <img src="19.jpg" alt="VESTIDO">
+        <div class="producto-info">
+          <h2>VESTIDO</h2>
+          <p>Pocos usos. Impecable, sin detalles.</p>
+          <span class="precio">$4000</span>
+          <span class="talle">Talle: S</span>
+          <button class="boton-comprar">Agregar al carrito</button>
+        </div>
+      </div>
+
+      <div class="producto">
+        <img src="20.jpg" alt="TOP CON CADENAS - Plateado">
+        <div class="producto-info">
+          <h2>TOP CON CADENAS - Plateado</h2>
+          <p>Pocos usos. Impecable, sin detalles.</p>
+          <span class="precio">$2.500</span>
+          <span class="talle">Talle: S</span>
+          <button class="boton-comprar">Agregar al carrito</button>
+        </div>
+      </div>
+
+      <div class="producto">
+        <img src="21.jpg" alt="CROP TOP - Negro">
+        <div class="producto-info">
+          <h2>CROP TOP - Negro</h2>
+          <p>Pocos usos. Impecable, sin detalles.</p>
+          <span class="precio">$2.500</span>
+          <span class="talle">Talle: S</span>
+          <button class="boton-comprar">Agregar al carrito</button>
+        </div>
+      </div>
+
+      <div class="producto">
+        <img src="22.jpg" alt="JEAN - Blanco">
+        <div class="producto-info">
+          <h2>JEAN - Blanco</h2>
+          <p>Pocos usos. Impecable, sin detalles.</p>
+          <span class="precio">$5000</span>
+          <span class="talle">Talle: S</span>
+          <button class="boton-comprar">Agregar al carrito</button>
+        </div>
+      </div>
+
+      <div class="producto">
+        <img src="23.jpg" alt="CROP TOP - Verde militar">
+        <div class="producto-info">
+          <h2>CROP TOP - Verde militar</h2>
+          <p>Pocos usos. Impecable, sin detalles.</p>
+          <span class="precio">$2.500</span>
+          <span class="talle">Talle: S</span>
+          <button class="boton-comprar">Agregar al carrito</button>
+        </div>
+      </div>
+
+      <div class="producto">
+        <img src="24.jpg" alt="TOP ANIMAL PRINT">
+        <div class="producto-info">
+          <h2>TOP ANIMAL PRINT</h2>
+          <p>Pocos usos. Impecable, sin detalles.</p>
+          <span class="precio">$3000</span>
+          <span class="talle">Talle: S</span>
+          <button class="boton-comprar">Agregar al carrito</button>
+        </div>
+      </div>
+
+      <div class="producto">
+        <img src="25.jpg" alt="REMERA ANIMAL PRINT - Negra">
+        <div class="producto-info">
+          <h2>REMERA ANIMAL PRINT - Negra</h2>
+          <p>Pocos usos. Impecable, sin detalles.</p>
+          <span class="precio">$3.500</span>
+          <span class="talle">Talle: S</span>
+          <button class="boton-comprar">Agregar al carrito</button>
+        </div>
+      </div>
+
+      <div class="producto">
+        <img src="26.jpg" alt="GORRO POLAR  - Marron">
+        <div class="producto-info">
+          <h2>GORRO POLAR  - Marron</h2>
+          <p>Pocos usos. Impecable, sin detalles.</p>
+          <span class="precio">$2.000</span>
+          <button class="boton-comprar">Agregar al carrito</button>
+        </div>
+      </div>
+
+      <div class="producto">
+        <img src="27.jpg" alt="REMERA MANGA LARGA- Gris">
+        <div class="producto-info">
+          <h2>REMERA MANGA LARGA- Gris</h2>
+          <p>Pocos usos. Impecable, sin detalles.</p>
+          <span class="precio">$4.000</span>
+          <span class="talle">Talle: S</span>
+          <button class="boton-comprar">Agregar al carrito</button>
+        </div>
+      </div>
+
+      <div class="producto">
+        <img src="28.jpg" alt="POLLERA ELASTIZADA - Negra">
+        <div class="producto-info">
+          <h2>POLLERA ELASTIZADA - Negra</h2>
+          <p>Pocos usos. Impecable, sin detalles.</p>
+          <span class="precio">$3.000</span>
+          <span class="talle">Talle: S</span>
+          <button class="boton-comprar">Agregar al carrito</button>
+        </div>
+      </div>
+
+      <div class="producto">
+        <img src="29.jpg" alt="SHORT CON ELASTICO - Rojo">
+        <div class="producto-info">
+          <h2>SHORT CON ELASTICO - Rojo</h2>
+          <p>Pocos usos. Impecable, sin detalles.</p>
+          <span class="precio">$3.200</span>
+          <span class="talle">Talle: S</span>
+          <button class="boton-comprar">Agregar al carrito</button>
+        </div>
+        </div>
+
+        <div class="producto">
+        <img src="30.jpg" alt="CORSET  - Rosa">
+        <div class="producto-info">
+          <h2>CORSET  - Rosa</h2>
+          <p>Pocos usos. Impecable, sin detalles.</p>
+          <span class="precio">$3.700</span>
+          <span class="talle">Talle: S</span>
+          <button class="boton-comprar">Agregar al carrito</button>
+        </div>
+        </div>
+
+        <div class="producto">
+        <img src="31.jpg" alt="MUSCULOSA  - Gris/Negra">
+        <div class="producto-info">
+          <h2>MUSCULOSA  - Gris/Negra</h2>
+          <p>Pocos usos. Impecable, sin detalles.</p>
+          <span class="precio">$4000</span>
+          <span class="talle">Talle: S</span>
+          <button class="boton-comprar">Agregar al carrito</button>
+        </div>
+        </div>
+
+        <div class="producto">
+        <img src="32.jpg" alt="BIKER - Negra">
+        <div class="producto-info">
+          <h2>BIKER - Negra</h2>
+          <p>Pocos usos. Impecable, sin detalles.</p>
+          <span class="precio">$3.500</span>
+          <span class="talle">Talle: S</span>
+          <button class="boton-comprar">Agregar al carrito</button>
+        </div>
+        </div>
+
+        <div class="producto">
+        <img src="33.jpg" alt="REMERA MORLEY ESCOTE BOTE- Blanca y Negro">
+        <div class="producto-info">
+          <h2>REMERA MORLEY ESCOTE BOTE- Blanca y Negro</h2>
+          <p>Pocos usos. Impecable, sin detalles.</p>
+          <span class="precio">$3.500</span>
+          <span class="talle">Talle: S</span>
+          <button class="boton-comprar">Agregar al carrito</button>
+        </div>
+        </div>
+
+        <div class="producto">
+        <img src="34.jpg" alt="TOP CORTO- Blanca y Negro">
+        <div class="producto-info">
+          <h2>TOP CORTO- Blanca y Negro</h2>
+          <p>Pocos usos. Impecable, sin detalles.</p>
+          <span class="precio">$3.000</span>
+          <span class="talle">Talle: S</span>
+          <button class="boton-comprar">Agregar al carrito</button>
+        </div>
+        </div>
+
+        <div class="producto">
+        <img src="35.jpg" alt="PANTUFLAS CAPIBARA- Marrones">
+        <div class="producto-info">
+          <h2>PANTUFLAS CAPIBARA- Marrones</h2>
+          <p>Sin usos. Impecable, sin detalles.</p>
+          <span class="precio">$3000</span>
+          <span class="talle">Talle: 37</span>
+          <button class="boton-comprar">Agregar al carrito</button>
+        </div>
+        </div>
+
+        <div class="producto">
+        <img src="36.jpg" alt="CROP TOP - Gris/Negro">
+        <div class="producto-info">
+          <h2>CROP TOP - Gris/Negro</h2>
+          <p>Sin usos. Impecable, sin detalles.</p>
+          <span class="precio">$2500</span>
+          <span class="talle">Talle: S</span>
+          <button class="boton-comprar">Agregar al carrito</button>
+        </div>
+        </div>
+
+        <div class="producto">
+        <img src="37.jpg" alt="SHORT CON VUELOS- Blanco">
+        <div class="producto-info">
+          <h2>SHORT CON VUELOS- Blanco</h2>
+          <p>Pocos usos. Impecable, sin detalles.</p>
+          <span class="precio">$2000</span>
+          <span class="talle">Talle: S</span>
+          <button class="boton-comprar">Agregar al carrito</button>
+        </div>
+        </div>
+
+        <div class="producto">
+        <img src="38.jpg" alt="SHORT DE JEAN - Azul">
+        <div class="producto-info">
+          <h2>SHORT DE JEAN - Azul</h2>
+          <p>Impecable, sin detalles.</p>
+          <span class="precio">$2.500</span>
+          <span class="talle">Talle: 40</span>
+          <button class="boton-comprar">Agregar al carrito</button>
+        </div>
+        </div>
+
+        <div class="producto">
+        <img src="39.jpg" alt="TOP DEPORTIVO- Rosa">
+        <div class="producto-info">
+          <h2>TOP DEPORTIVO- Rosa</h2>
+          <p>sin usos. Impecable, sin detalles.</p>
+          <span class="precio">$3.000</span>
+          <span class="talle">Talle: S</span>
+          <button class="boton-comprar">Agregar al carrito</button>
+        </div>
+        </div>
+
+        <div class="producto">
+        <img src="40.jpg" alt="TOP DEPORTIVO- Morado">
+        <div class="producto-info">
+          <h2>TOP DEPORTIVO- Morado</h2>
+          <p>Sin usos. Impecable, sin detalles.</p>
+          <span class="precio">$3.000</span>
+          <span class="talle">Talle: S</span>
+          <button class="boton-comprar">Agregar al carrito</button>
+        </div>
+        </div>
+
+        <div class="producto">
+        <img src="41.jpg" alt="TOP DEPORTIVO- Azul y Gris">
+        <div class="producto-info">
+          <h2>TOP DEPORTIVO- Azul y Gris</h2>
+          <p>Sin usos. Impecable, sin detalles.</p>
+          <span class="precio">$3.000</span>
+          <span class="talle">Talle: M</span>
+          <button class="boton-comprar">Agregar al carrito</button>
+        </div>
+        </div>
+
+        <div class="producto">
+        <img src="42.jg.jpg" alt="REMERA DEPORTIVA TRANSPARENTE - Blanca">
+        <div class="producto-info">
+          <h2>REMERA DEPORTIVA TRANSPARENTE - Blanca</h2>
+          <p>Pocos usos. Impecable, sin detalles.</p>
+          <span class="precio">$2.500</span>
+          <span class="talle">Talle:  M</span>
+          <button class="boton-comprar">Agregar al carrito</button>
+        </div>
+        </div>
+
+        <div class="producto">
+        <img src="43.jpg" alt="REMERA CORTA- Marron">
+        <div class="producto-info">
+          <h2>REMERA CORTA- Marron</h2>
+          <p>Pocos usos. Impecable, sin detalles.</p>
+          <span class="precio">$2500</span>
+          <span class="talle">Talle: M</span>
+          <button class="boton-comprar">Agregar al carrito</button>
+        </div>
+        </div>
+
+        <div class="producto">
+        <img src="44.jpg" alt="REMERA ASIMETRICA- Azul">
+        <div class="producto-info">
+          <h2>REMERA ASIMETRICA- Azul</h2>
+          <p>Pocos usos. Impecable, sin detalles.</p>
+          <span class="precio">$2000</span>
+          <span class="talle">Talle: S</span>
+          <button class="boton-comprar">Agregar al carrito</button>
+        </div>
+        </div>
+
+        <div class="producto">
+        <img src="45.jpg" alt="TOP CORSET- Naranja">
+        <div class="producto-info">
+          <h2>TOP CORSET- Naranja</h2>
+          <p>Pocos usos. Impecable, sin detalles.</p>
+          <span class="precio">$2000</span>
+          <span class="talle">Talle: S</span>
+          <button class="boton-comprar">Agregar al carrito</button>
+        </div>
+        </div>
+
+        <div class="producto">
+        <img src="46.jpg" alt="BOLERO - Blanco">
+        <div class="producto-info">
+          <h2>BOLERO - Blanco</h2>
+          <p>Un uso. Impecable, sin detalles.</p>
+          <span class="precio">$3500</span>
+          <span class="talle">Talle: S</span>
+          <button class="boton-comprar">Agregar al carrito</button>
+        </div>
+        </div>
+
+        <div class="producto">
+        <img src="47.jpg" alt="PANTALON CARGO - Azul">
+        <div class="producto-info">
+          <h2>PANTALON CARGO - Azul</h2>
+          <p>Pocos usos. Impecable, sin detalles.</p>
+          <span class="precio">$4000</span>
+          <span class="talle">Talle: S</span>
+          <button class="boton-comprar">Agregar al carrito</button>
+        </div>
+        </div>
+
+        <div class="producto">
+        <img src="48.jpg" alt="JEAN “ROTO” - Azul">
+        <div class="producto-info">
+          <h2>JEAN “ROTO” - Azul</h2>
+          <p>Pocos usos. Impecable, sin detalles.</p>
+          <span class="precio">$5000</span>
+          <span class="talle">Talle: 36</span>
+          <button class="boton-comprar">Agregar al carrito</button>
+        </div>
+        </div>
+
+
+        <div class="producto">
+        <img src="49.jpg" alt="VESTIDO CON FRUNCE Y BRILLOS- Negro">
+        <div class="producto-info">
+          <h2>VESTIDO CON FRUNCE Y BRILLOS- Negro</h2>
+          <p>Un uso. Impecable, sin detalles.</p>
+          <span class="precio">$4000</span>
+          <span class="talle">Talle: S</span>
+          <button class="boton-comprar">Agregar al carrito</button>
+        </div>
+        </div>
+
+
+        <div class="producto">
+        <img src="50.jpg" alt="VESTIDO CLASICO BRILLOSO- Negro">
+        <div class="producto-info">
+          <h2>VESTIDO CLASICO BRILLOSO- Negro</h2>
+          <p>Pocos usos. Impecable, sin detalles.</p>
+          <span class="precio">$4000</span>
+          <span class="talle">Talle: S</span>
+          <button class="boton-comprar">Agregar al carrito</button>
+        </div>
+        </div>
+
+
+        <div class="producto">
+        <img src="51.jpg" alt="POLLERA ENGOMADA - Negra">
+        <div class="producto-info">
+          <h2>POLLERA ENGOMADA - Negra</h2>
+          <p>Pocos usos. Impecable, sin detalles.</p>
+          <span class="precio">$4500</span>
+          <span class="talle">Talle: S</span>
+          <button class="boton-comprar">Agregar al carrito</button>
+        </div>
+        </div>
+
+
+        <div class="producto">
+        <img src="52.jpg" alt="CONJUNTO DE PIJAMA - Negro">
+        <div class="producto-info">
+          <h2>CONJUNTO DE PIJAMA - Negro</h2>
+          <p>Sin usos. Impecable, sin detalles.</p>
+          <span class="precio">$6000</span>
+          <span class="talle">Talle: S</span>
+          <button class="boton-comprar">Agregar al carrito</button>
+        </div>
+        </div>
+
+
+        <div class="producto">
+        <img src="53.jpg" alt="SHORT DEPORTIVO CON PUSH UP - Gris">
+        <div class="producto-info">
+          <h2>SHORT DEPORTIVO CON PUSH UP - Gris</h2>
+          <p>Un uso. Impecable, sin detalles.</p>
+          <span class="precio">$25.000</span>
+          <span class="talle">Talle: M</span>
+          <button class="boton-comprar">Agregar al carrito</button>
+        </div>
+        </div>
+
+        <div class="producto">
+        <img src="54,jpg.jpg" alt="BERMUDA NEGRA">
+        <div class="producto-info">
+          <h2>BERMUDA NEGRA</h2>
+          <p>Bermuda negra con costuras blancas, sin detalles.</p>
+          <span class="precio">$3.000</span>
+          <span class="talle">Talle: 36</span>
+          <button class="boton-comprar">Agregar al carrito</button>
+        </div>
+        </div>
+
+        <div class="producto">
+        <img src="55.jpg" alt="JEAN">
+        <div class="producto-info">
+          <h2>JEAN</h2>
+          <p>Jean celeste con diseño, sin uso.</p>
+          <span class="precio">$3.000</span>
+          <span class="talle">Talle: 40</span>
+          <button class="boton-comprar">Agregar al carrito</button>
+        </div>
+        </div>
+
+        <div class="producto">
+        <img src="56.jpg" alt="PANTALON CARGO GRIS">
+        <div class="producto-info">
+          <h2>PANTALON CARGO GRIS</h2>
+          <p>Pocos usos. Impecable, sin detalles.</p>
+          <span class="precio">$3000</span>
+          <span class="talle">Talle: 36</span>
+          <button class="boton-comprar">Agregar al carrito</button>
+        </div>
+        </div>
+
+        <div class="producto">
+        <img src="57.jpg" alt="ZAPATILLAS NIKE">
+        <div class="producto-info">
+          <h2>ZAPATILLAS NIKE</h2>
+          <p>Zapatillas Nike Air Force originales, detalles en la tela.</p>
+          <span class="precio">$6000</span>
+          <span class="talle">Talle: -</span>
+          <button class="boton-comprar">Agregar al carrito</button>
+        </div>
+        </div>
+
+        <div class="producto">
+        <img src="58.jpg" alt="ZAPATILLAS CONVERSE">
+        <div class="producto-info">
+          <h2>ZAPATILLAS CONVERSE</h2>
+          <p>Pocos usos. Impecable, sin detalles.</p>
+          <span class="precio">$8000</span>
+          <span class="talle">Talle: -</span>
+          <button class="boton-comprar">Agregar al carrito</button>
+        </div>
+        </div>
+
+        <div class="producto">
+        <img src="59.jpg" alt="ZAPATILLAS VANS- NEGRAS">
+        <div class="producto-info">
+          <h2></h2>
+          <p>Pocos detalles.</p>
+          <span class="precio">$10000</span>
+          <span class="talle">Talle: 37 </span>
+          <button class="boton-comprar">Agregar al carrito</button>
+        </div>
+        </div>
+
+         <div class="producto">
+        <img src="60.jpg" alt="SHORT AMARILLO ADIDAS">
+        <div class="producto-info">
+          <h2>SHORT AMARILLO ADIDAS</h2>
+          <p>Original. Impecable, sin detalles.</p>
+          <span class="precio">$2500</span>
+          <span class="talle">Talle: -</span>
+          <button class="boton-comprar">Agregar al carrito</button>
+        </div>
+        </div>
+
+         <div class="producto">
+        <img src="61.jpg" alt="TOP NEGRO">
+        <div class="producto-info">
+          <h2>TOP NEGRO</h2>
+          <p>Casi sin uso. Impecable, sin detalles.</p>
+          <span class="precio">$2000</span>
+          <span class="talle">Talle: S</span>
+          <button class="boton-comprar">Agregar al carrito</button>
+        </div>
+        </div>
+
+         <div class="producto">
+        <img src="62.jpg" alt="TOP FLORES">
+        <div class="producto-info">
+          <h2>TOP FLORES</h2>
+          <p>Pocos usos. Impecable, sin detalles.</p>
+          <span class="precio">$1.500</span>
+          <span class="talle">Talle: S</span>
+          <button class="boton-comprar">Agregar al carrito</button>
+        </div>
+        </div>
+
+         <div class="producto">
+        <img src="63.jpg" alt="VESTIDO BLANCO">
+        <div class="producto-info">
+          <h2>VESTIDO BLANCO</h2>
+          <p>Vestido blanco con cierre, pocos usos, sin detalles.</p>
+          <span class="precio">$1500</span>
+          <span class="talle">Talle: S</span>
+          <button class="boton-comprar">Agregar al carrito</button>
+        </div>
+        </div>
+
+         <div class="producto">
+        <img src="64.jpg" alt="TOP AZUL RAYADO">
+        <div class="producto-info">
+          <h2>TOP AZUL RAYADO</h2>
+          <p>Sin usos. Impecable, sin detalles.</p>
+          <span class="precio">$1500</span>
+          <span class="talle">Talle: S</span>
+          <button class="boton-comprar">Agregar al carrito</button>
+        </div>
+        </div>
+
+         <div class="producto">
+        <img src="65.jpg" alt="ZAPATILLAS VANS">
+        <div class="producto-info">
+          <h2>ZAPATILLAS VANS</h2>
+          <p>Zapatillas Vans Knu, detalles en la tela.</p>
+          <span class="precio">$8000</span>
+          <span class="talle">Talle: -</span>
+          <button class="boton-comprar">Agregar al carrito</button>
+        </div>
+        </div>
+
+         <div class="producto">
+        <img src="66.jpg" alt="JOGGING GRIS">
+        <div class="producto-info">
+          <h2>JOGGING GRIS</h2>
+          <p>Pocos usos. Impecable, sin detalles.</p>
+          <span class="precio">$2500</span>
+          <span class="talle">Talle: -</span>
+          <button class="boton-comprar">Agregar al carrito</button>
+        </div>
+        </div>
+
+        <div class="producto">
+        <img src="67.jpg" alt="POLLERA BLANCA">
+        <div class="producto-info">
+          <h2>POLLERA BLANCA</h2>
+          <p>Pocos usos. Impecable, sin detalles.</p>
+          <span class="precio">$3000</span>
+          <span class="talle">Talle: S</span>
+          <button class="boton-comprar">Agregar al carrito</button>
+        </div>
+        </div>
+
+        <div class="producto">
+        <img src="68.jpg" alt="JEAN SALMON">
+        <div class="producto-info">
+          <h2>JEAN SALMON</h2>
+          <p>>Jean salmon, con apertura en la pierna, sin detalles.</p>
+          <span class="precio">$3000</span>
+          <span class="talle">Talle: 32</span>
+          <button class="boton-comprar">Agregar al carrito</button>
+        </div>
+        </div>
+
+        <div class="producto">
+        <img src="69.jpg" alt="TOP MOSTAZA">
+        <div class="producto-info">
+          <h2>TOP MOSTAZA</h2>
+          <p>Pocos usos. Impecable, sin detalles.</p>
+          <span class="precio">$2000</span>
+          <span class="talle">Talle: S</span>
+          <button class="boton-comprar">Agregar al carrito</button>
+        </div>
+        </div>
+
+        <div class="producto">
+        <img src="71.JPG" alt="REMERA CELESTE">
+        <div class="producto-info">
+          <h2>REMERA CELESTE</h2>
+          <p>Pocos usos. Impecable, sin detalles.</p>
+          <span class="precio">$2000</span>
+          <span class="talle">Talle: -</span>
+          <button class="boton-comprar">Agregar al carrito</button>
+        </div>
+        </div>
+
+        <div class="producto">
+        <img src="72.JPG" alt="BUZO ROSA">
+        <div class="producto-info">
+          <h2>BUZO ROSA</h2>
+          <p>Pocos usos. Impecable, sin detalles.</p>
+          <span class="precio">$2800</span>
+          <span class="talle">Talle: -</span>
+          <button class="boton-comprar">Agregar al carrito</button>
+        </div>
+        </div>
+
+        <div class="producto">
+        <img src="73.JPG" alt="CAMPERA INFLABLE">
+        <div class="producto-info">
+          <h2>CAMPERA INFLABLE</h2>
+          <p>Campera inflable, costura en la axila derecha.</p>
+          <span class="precio">$3000</span>
+          <span class="talle">Talle: -</span>
+          <button class="boton-comprar">Agregar al carrito</button>
+        </div>
+        </div>
+
+        <div class="producto">
+        <img src="74.jpg" alt="CAMPERA FLOREADA">
+        <div class="producto-info">
+          <h2>CAMPERA FLOREADA</h2>
+          <p>Pocos usos. Impecable, sin detalles.</p>
+          <span class="precio">$3000</span>
+          <span class="talle">Talle: -</span>
+          <button class="boton-comprar">Agregar al carrito</button>
+        </div>
+        </div>
+
+        <div class="producto">
+        <img src="75.jpg" alt="PANTALON CORTO VERDE">
+        <div class="producto-info">
+          <h2>PANTALON CORTO VERDE</h2>
+          <p>Pocos usos. Impecable, sin detalles.</p>
+          <span class="precio">$2500</span>
+          <span class="talle">Talle: 40/42</span>
+          <button class="boton-comprar">Agregar al carrito</button>
+        </div>
+        </div>
+
+        <div class="producto">
+        <img src="76.jpg" alt="PANTALON DE VERTIR- BEIGE">
+        <div class="producto-info">
+          <h2>PANTALON DE VERTIR- BEIGE</h2>
+          <p>Pocos usos. Impecable, sin detalles.</p>
+          <span class="precio">$4000</span>
+          <span class="talle">Talle: 38/40</span>
+          <button class="boton-comprar">Agregar al carrito</button>
+        </div>
+        </div>
+
+        <div class="producto">
+        <img src="77.jpg" alt="TOP PARA SALIR MARRON">
+        <div class="producto-info">
+          <h2>TOP PARA SALIR MARRON</h2>
+          <p>Pocos usos. Impecable, sin detalles.</p>
+          <span class="precio">$3500</span>
+          <span class="talle">Talle: S</span>
+          <button class="boton-comprar">Agregar al carrito</button>
+        </div>
+        </div>
+
+        <div class="producto">
+        <img src="78.jpg" alt="MANGAS BORDO">
+        <div class="producto-info">
+          <h2>MANGAS BORDO</h2>
+          <p>Ningun uso. Impecable, sin detalles.</p>
+          <span class="precio">$2000</span>
+          <span class="talle">Talle: S</span>
+          <button class="boton-comprar">Agregar al carrito</button>
+        </div>
+        </div>
+
+      </div>
+
+      
+      </div>
+
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Tienda de Peluches - Todos los derechos reservados</p>
+  </footer>
+
+</body>
+
+</html>
